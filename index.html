@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<title>iot project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+
+</style>
+<body class="w3-black">
+    
+    
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="12.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">IOT</span> Smart Gas Detection System</h1>
+    <p></p>
+    <img src="iot.jfif" class="w3-image" width="600" height="500">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Introduction</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>It is an (IOT) related Gas Detection System, which help to detect the leakage of the gas and 
+        inform the relevant person. Our aim is to reduce the risks in Kitchen using Internet of 
+        Things. The main aim is to propose the design and construction of an SMS based Gas 
+        Leakage Alert System. Gas sensor are used to detect gas leakages in a kitchen. With the 
+        help of this sensor the issue of gas wastage is also monitored. The sensor keeps on recording 
+        the data continuously and if it is found any leakage of gas, the sensor sends the data to the 
+        microcontroller, microcontroller analysis the data recorded by the sensor and check 
+        whether the leakage of the gas is in safe state or danger state. if system found the gas 
+        leakage is continuously increasing than it pushes the alarm buzzer which can make some 
+        sound to inform the home guardian. It also able to send the SMS to the home owner who 
+        is connected with the system to get an awareness message.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Major Components</h3>
+    <p class="w3-wide">Raspberry Pi-3</p>
+    <div class="w3-light-grey">
+            <hr style="width:200px" class="w3-opacity">
+            <p>The Raspberry Pi 3 is a tiny credit card size computer. Just add a keyboard, mouse, display, power supply, 
+                micro SD card with installed Linux Distribution and you'll have a fully fledged computer that can 
+                run applications from word processors and which is going to used processing the sensor inputs.
+            </p>
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">SIM Module</p>
+    <div class="w3-white">
+        <p>
+            The SIM900 is a complete Quad-band GSM/GPRS solution in a SMT module which can be embedded in the customer 
+            applications. Featuring  an  industry-standard  interface,  the  SIM900  delivers GSM/GPRS 850/900/1800/1900MHz 
+            performance for voice, SMS, Data,  and  Fax  in  a  small   form  factor  and  with  low  power consumption. With 
+            a tiny configuration of 24mm x 24mm x 3 mm, SIM900 can fit almost all the space requirements in your M2M application, 
+            especially for slim and compact demand of design.
+            </p>
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Sensor</p>
+    <div class="w3-white">
+        <p>This is a simple-to-use liquefied petroleum gas (LPG) sensor, suitable for sensing LPG 
+            (composed of mostly propane and butane) concentrations in the air. The MQ-6 can detect
+             gas concentrations anywhere from 200 to 10000ppm. ... The sensor's output is an analog resistance.</p>
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Sensor</span><br>
+        Which Detect
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Microcontroller</span><br>
+        Which process
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Sim Module</span><br>
+        Send Massages
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Mobile</span><br>
+        Recieve Emergency Massages
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Report
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Implimentation</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Hardware</li>
+          <li class="w3-padding-16">Raspberry-pi 3</li>
+          <li class="w3-padding-16">SIM Module</li>
+          <li class="w3-padding-16">LPG Detection Sensor</li>
+          <li class="w3-padding-16">Mobile Phone</li>
+          <li class="w3-padding-16">
+            <h2>Alarm</h2>
+            <span class="w3-opacity">Buzzer</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Good to Go</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Programming/Software</li>
+          <li class="w3-padding-16">Raspberian OS</li>
+          <li class="w3-padding-16">Python</li>
+          <li class="w3-padding-16">PHP Database</li>
+          <li class="w3-padding-16">HTML 5</li>
+          <li class="w3-padding-16">
+            <h2>SIM Modulatin</h2>
+            <span class="w3-opacity">Script</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Roll up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Project Members</h3>  
+    <img src="bhava.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Bhava:</span> Programmer</p>
+    <p>Programming Concept behind the Project</p><br>
+    
+    <img src="tamal.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Tamal Saha:</span>Hardware Expert</p>
+    <p>Hardware Assemble And Deassemble</p><br>
+
+
+    <img src="me.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Krishna Vishwakarma:</span>IOT Expert</p>
+    <p>Project Designer And Programing Behind Project</p><br>
+
+    <img src="suvon1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Sovon Biswas:</span>Database Expert</p>
+    <p>Handling And Managing the Project Database</p><br>
+
+    <img src="sabnam.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Shabnam Minz:</span>Programmer</p>
+    <p>Project Programing Data Analyst</p><br>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Project Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="rasp.jpg" style="width:100%">
+        <img src="mobile2.webp" style="width:100%">
+        <img src="sensor.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="sim.jpg" style="width:100%">
+        <img src="lcd.jpg" style="width:100%">
+        <img src="diagram.png" style="width:100%">
+        <img src="iot.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact US</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Panjab IN</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +9967339082</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: krishnanew99@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.lpu.in" target="_blank" class="w3-hover-text-green">LPU University</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
